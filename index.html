@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Demo App</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="vue-app">
+      This is your name, isn't it?, {{name}}
+      You want me to type something using vue {{print("something")}}
+      <p>Let's try some events</p>
+      <p>Click to add <button v-on:click="add(2)">Click</button></p>
+      <p>Double Click to subtract <button @dblclick="subtract(1)">Double click</button>
+      </p>
+      <p>
+        <h4>{{value}}</h4>
+      </p>
+
+      <canvas id="canvas" @mouseover="getCordinates" width="300" height="300" style="border:1px solid black;"></canvas>
+      <p>X : {{x}} Y : {{y}}</p>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+
+</html>
