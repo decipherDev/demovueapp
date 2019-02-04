@@ -6,7 +6,13 @@ new Vue({
     value: 0,
     x: 0,
     y: 0,
-    dataBinding: ""
+    dataBinding: "",
+    employeeName: [
+      {name : "thor"},
+      {name : "captain america"},
+      {name : "captain marvel"},
+      {name : "iron man"}
+    ]
   },
 
   methods: {
@@ -28,7 +34,9 @@ new Vue({
       this.x = event.x;
       this.y = event.y;
     }
+  },
+
+  computed: {
+
   }
-
-
 });
